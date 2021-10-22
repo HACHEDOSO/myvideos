@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="fv-background", fv-video="func_videos/Thumbnail.mp4", fv-playback-info="func_videos/Thumbnail.json"></section>
+				<section>
+					<h1>Acercamiento intuitivo</h1>
+					<p>Objetivo: realizar un acercamiento intuitivo a la definición de función.</p>
+				</section>
+				<section>
+					<section class="fv-background", fv-video="func_videos/Approach.mp4", fv-playback-info="func_videos/Approach.json"></section>
+					<section class="fv-background", fv-video="func_videos/Approach2.mp4", fv-playback-info="func_videos/Approach2.json"></section>
+				</section>
+				<section>
+					<h1>Definición de función</h1>
+					<p>Objetivo: comprender la definición de función.</p>
+				</section>
+				<section class="fv-background", fv-video="func_videos/Definition.mp4", fv-playback-info="func_videos/Definition.json"></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/manim/manim.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				autoPlayMedia: false,
+				controls: false,
+				progress: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealManim ]
+			});
+		</script>
+	</body>
+</html>
